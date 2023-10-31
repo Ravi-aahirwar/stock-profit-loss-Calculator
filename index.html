@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>Stock Profit & Loss Calculator</title>
+</head>
+
+<body>
+  <div id="wrapper-container">
+    <header>
+      <div id="wrapper">
+        <div class="wrapper-left">
+          <h1>Find out<span class="green"> profit </span>/ <span class="red">loss </span> on your stock</h1>
+          <p>
+            <strong>Enter the following details:</strong>
+          </p>
+          <ul>
+            <li>Price at which you bought the stock.</li>
+            <li>Selling price of stock</li>
+            <li>No. of quantity</li>
+          </ul>
+          <form id="stock-form">
+            <input type="number" required min="1" id="initial-price" placeholder="Enter cost price of stock" />
+            <input type="number" required min="1" id="current-price" placeholder="Enter selling price of stock" />
+            <input type="number" required min="1" id="stocks-quantity" placeholder="Enter quantity" />
+            <button type="submit" id="submit-btn">
+              Calculate
+            </button>
+            <button class="reset">
+              Reset
+            </button>
+          </form>
+          <h4 id="resultText"></h4>
+        </div>
+        <div class="wrapper-right">
+          <img src="https://media.giphy.com/media/Mc1yxvp8fIGuYXHJI0/giphy.gif" />
+        </div>
+        <div class="social social-icons"></a>
+          <a target="_blank" href="https://github.com/Ravi-aahirwar"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </header>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
